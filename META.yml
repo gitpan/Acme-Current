@@ -1,7 +1,7 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Acme-Current
-version:      20030807
+version:      20030808
 version_from: lib/Acme/Current.pm
 installdirs:  site
 requires:
