@@ -5,7 +5,12 @@ use vars qw($VERSION);
 
 use vars qw($YEAR $MONTH $DAY);
 
-$VERSION = sprintf "%04d%02d%02d", $YEAR = 2003, $MONTH = 8, $DAY = 10;
+my @now = gmtime;
+$YEAR = $now[5] + 1900;
+$MONTH = $now[4] + 1;
+$DAY = $now[3];
+
+$VERSION = 20380119; # epoch max {grin}
 
 1;
 
@@ -30,7 +35,7 @@ Acme::Current - Determine current year, month, day (GMT)
 
 C<Acme::Current> gives you all the power of those myriad of date/time
 modules without all that complexity, as long as all you want is the
-current date (GMT-based), and you keep the module up to date.
+current date (GMT-based).
 
 =head1 EXPORT
 
@@ -39,7 +44,8 @@ and so on.
 
 =head1 BUGS
 
-None known.
+None known.  A bug in previous versions that required frequent
+updating of the module seems to have been fixed.
 
 =head1 SEE ALSO
 
