@@ -5,7 +5,7 @@ use vars qw($VERSION);
 
 use vars qw($YEAR $MONTH $DAY);
 
-$VERSION = do { $YEAR = 2003; $MONTH = 7; $DAY = 15; sprintf "%04d%02d%02d", $YEAR, $MONTH, $DAY };
+$VERSION = sprintf "%04d%02d%02d", $YEAR = 2003, $MONTH = 7, $DAY = 16;
 
 1;
 
@@ -18,7 +18,7 @@ Acme::Current - Determine current year, month, day (GMT)
 =head1 SYNOPSIS
 
   use Acme::Current;
-  printf "It's now %04d/%02d/%02d\n",
+  printf "It's now %04d/%02d/%02d.\n",
     $Acme::Current::YEAR,
     $Acme::Current::MONTH,
     $Acme::Current::DAY;
@@ -32,10 +32,14 @@ C<Acme::Current> gives you all the power of those myriad of date/time
 modules without all that complexity, as long as all you want is the
 current date (GMT-based), and you keep the module up to date.
 
-=head2 EXPORT
+=head1 EXPORT
 
 Nothing.  You need to use C<$Acme::Current::YEAR> to get the year,
 and so on.
+
+=head1 BUGS
+
+None known.
 
 =head1 SEE ALSO
 
@@ -48,6 +52,8 @@ needs.
 
 Randal L. Schwartz, E<lt>merlyn@stonehenge.comE<gt>,
 L<http://www.stonehenge.com/merlyn/>.
+
+Based on an idea from a conversation with Joshua Hoblitt.
 
 =head1 COPYRIGHT AND LICENSE
 

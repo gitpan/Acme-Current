@@ -1,6 +1,5 @@
 README
 Makefile.PL
 MANIFEST			This list of files
-META.yml
 lib/Acme/Current.pm
 t/01-core.t
