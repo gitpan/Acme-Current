@@ -5,7 +5,7 @@ use vars qw($VERSION);
 
 use vars qw($YEAR $MONTH $DAY);
 
-$VERSION = sprintf "%04d%02d%02d", $YEAR = 2003, $MONTH = 7, $DAY = 31;
+$VERSION = sprintf "%04d%02d%02d", $YEAR = 2003, $MONTH = 8, $DAY = 1;
 
 1;
 
